@@ -13,18 +13,14 @@ let newEven = [];
 
  evenNum=(a,b)=>{
 
-    let even =+ (a<b) || -1,i ;
-    result = [];
-
-     for(i=a; i!==b + even; i += even){
-         if(+(even === 1) !==i %2){
-             result.push(i);
-         }
+    let  arrAB= [];
+     for(i=a; i<b; i+=2){
+        arrAB.push(i)
      }
-     return result;
+     console.log(arrAB);
 }
-console.log(evenNum(1,20));
 
+evenNum(10,120);
 
  // 3. When would you use a conditional statement? (a)when you want to reuse a set of statements multiple times (b)when you want your code to choose between multiple numbers © when you want to group data together (d) when you want to loop through a group of statements.
 
